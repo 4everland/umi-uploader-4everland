@@ -1,1 +1,0 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("./_commonjsHelpers.cjs"),s=require("../node_modules/@aws-sdk/util-locate-window/dist-es/index.cjs"),t=e.getAugmentedNamespace(s);exports.default=t;

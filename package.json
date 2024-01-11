@@ -2,16 +2,16 @@
   "name": "@4everland/umi-uploader-4everland",
   "version": "1.0.0",
   "description": "an uploader for 4everland",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.esm.js",
-  "browser": "./dist/index.umd.min.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./dist && tsc --declarationDir dist/types --declaration true && rollup -c"
+    "build": "rm -rf ./dist && rollup -c"
   },
   "keywords": [
-    "umi"
+    "umi",
+    "uploader"
   ],
   "author": "4everland",
   "license": "ISC",

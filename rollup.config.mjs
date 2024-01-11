@@ -13,19 +13,13 @@ export default {
   input: './src/index.ts',
   output: [
     {
-      dir: 'dist/cjs',
-      entryFileNames: `[name].cjs`,
+      file: './dist/index.cjs',
       format: 'cjs',
-      preserveModules: true,
-      exports: 'named',
       plugins: [terser()]
     },
     {
-      dir: 'dist/esm',
-      entryFileNames: `[name].mjs`,
+      file: './dist/index.mjs',
       format: 'esm',
-      preserveModules: true,
-      exports: 'named',
       plugins: [terser()]
     }
   ],
@@ -36,9 +30,7 @@ export default {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
       preventAssignment: true
     }),
-    typescript({
-      tsconfig: './tsconfig.json'
-    }),
+    typescript(),
     nodeResolve({ browser: true }),
     nodePolyfills(),
     babel({ babelHelpers: 'bundled', extensions: [...DEFAULT_EXTENSIONS, ...extensions] })
