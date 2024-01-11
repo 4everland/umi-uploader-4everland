@@ -14,6 +14,8 @@
     "uploader"
   ],
   "author": "4everland",
+  "repository": "https://github.com/4everland/umi-uploader-4everland",
+  "homepage": "https://github.com/4everland/umi-uploader-4everland",
   "license": "ISC",
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.485.0",
