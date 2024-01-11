@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("./_commonjsHelpers.cjs"),s=require("../node_modules/tslib/tslib.es6.cjs"),r=e.getAugmentedNamespace(s);exports.default=r;
